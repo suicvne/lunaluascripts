@@ -1,0 +1,5 @@
+--Place this in your lunaworld.lua in each of your episodes.
+
+_deathCounter = loadAPI("deathcounter");
+
+--That's it! deathcounter takes care of everything for you! c:
