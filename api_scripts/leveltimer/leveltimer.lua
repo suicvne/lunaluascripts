@@ -1,3 +1,8 @@
+local __title = "Level Timer";
+local __version = "1.1.0.0";
+local __author = "Mike Santiago";
+local __url = "http://mrmiketheripper.x10.mx/leveltimer"
+
 local lf_levelTimerApi = {} --instance
 
 local secondsleft = 300; --The amount of seconds left.
@@ -10,7 +15,7 @@ local passTime = true; --Whether or not to pass time, if false, time will stop.
 local timerEnabled = true; --Whether or not the timer itself is actually enabled or not
 local warnedPlayer = false; --Whether or not we've warned the player that time is running out
 local resPath = getSMBXPath() .. "\\LuaScriptsLib\\leveltimer"; --res path
-local uiImage = Graphics.loadImage(resPath .. "\\ui_old.png"); --ui thing
+local uiImage = Graphics.loadImage(resPath .. "\\ui.png"); --ui thing
 
 lf_levelTimerApi.GUIPosition_NoStars = {x = 252, y = 50}
 lf_levelTimerApi.GUIPosition_Stars = {x = 252, y = 66}
