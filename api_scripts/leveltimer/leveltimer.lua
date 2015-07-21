@@ -4,7 +4,7 @@ local secondsleft = 300; --The amount of seconds left.
 local framecounter = 0; --Counts the amount of frames
 local postWinFrameCounter = 0; --Counts frams since after the win
 local player1 = Player(); --The player variable
-local player2 = Player(2); --Player 2
+local player2 = Player(2);
 local playerkilled = false; --If the player was killed already so we don't kill him 21390840239 times
 local passTime = true; --Whether or not to pass time, if false, time will stop.
 local timerEnabled = true; --Whether or not the timer itself is actually enabled or not
@@ -39,7 +39,9 @@ function lf_levelTimerApi.onLoopOverride()
       if(playerkilled == false) then
         player1:kill();
         if(player2 ~= nil) then
-          player2:kill();
+          if(player2.isValid) then
+            player2:kill();
+          end
         end
         playerkilled = true;
       end
