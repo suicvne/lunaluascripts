@@ -113,11 +113,11 @@ end
 
 
   timeelapsed = round(postWinFrameCounter / 60, 0);
-  if(timeelapsed > 1) then
+  if(timeelapsed > 0) then
     showPointCalc = true;
   end
 
-  if(timeelapsed > 2) then
+  if(timeelapsed > 1) then
     if(added ~= true) then
       showAddPoints = true;
       countPoints = true;
