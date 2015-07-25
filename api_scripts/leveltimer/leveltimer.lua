@@ -1,5 +1,5 @@
 local __title = "Level Timer";
-local __version = "1.1.0.1 Unofficial";
+local __version = "1.1.1.0";
 local __description = "A simple script to provide a level timer, a la Super Mario World and Super Mario Bros. 3.";
 local __author = "Mike Santiago, edited by XNBlank";
 local __url = "http://mrmiketheripper.x10.mx/leveltimer"
