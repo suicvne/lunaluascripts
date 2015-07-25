@@ -1,10 +1,16 @@
+local __title = "Death Counter"
+local __author = "Mike Santiago"
+local __version = "0.8.1.0"
+local __url = "http://www.supermariobrosx.org/forums/viewtopic.php?f=51&t=10228"
+local __description = "A simple module to count the amount of times you've died on a per episode, per save basis."
+
 local deathCounterApi = {}
 --functions go in between these
 
 --Variables
 local deathAniState = 0;
 local hasDied = false;
-local dataInstance = Data(Data.DATA_WORLD, true);
+local dataInstance = Data(Data.DATA_WORLD, "deathcounter", true);
 local deathCount = 0;
 --registers
 function deathCounterApi.onInitAPI()
