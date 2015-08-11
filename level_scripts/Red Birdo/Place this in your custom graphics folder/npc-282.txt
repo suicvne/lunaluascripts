@@ -1,0 +1,9 @@
+name="Red Birdo's Fireball"
+gfxheight=32
+gfxwidth=32
+frames=3
+framespeed=4
+framestyle=0
+height=32
+width=32
+noiceball=1
